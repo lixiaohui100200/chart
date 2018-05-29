@@ -1,11 +1,58 @@
 body{
-	height: 0;
-	width: 0;
+	margin: 0;
+	padding: 0;
+	background: #2f3137;
+	overflow: hidden;
+}
+.body{
+	display: flex;
+
+}
+.body .left{
+	width: 250px;
+	overflow: scroll;
+	position:absolute;
+	height: 100%;
+	background-color: #2f3137;
+	color: white;
+}
+.body .right {
+	position:relative;
+	left: 250px;
+	height: 100%;
 	margin: 0;
 	padding: 0;
 }
-.body .left{
-	border: 1px solid red;
+/*导航*/
+.body .right .rightTop{
+	background: #37393f;
+	border: 1px solid black;
+	color: white;
+	height: 50px;
+
+}
+/*右边下侧*/
+.body .right .rightDown{
+	display: flex;
+}
+/*内容*/
+.body .right .rightDown .content{
+	background: #37393e;
+}
+/*用户*/
+.body .right .rightDown .user{
 	width: 250px;
-	height: 100%;
+	overflow: scroll;
+	background-color: #2f3137;
+	color: white;
+}
+/*显示内容区*/
+.body .right .rightDown .content .content{
+	overflow: scroll;
+	height: 500px;
+	color: white;
+}
+.body .right .rightDown .content .form {
+	border: 1px solid red;
+	height: 100px;
 }
