@@ -1,0 +1,11 @@
+body{
+	height: 0;
+	width: 0;
+	margin: 0;
+	padding: 0;
+}
+.body .left{
+	border: 1px solid red;
+	width: 250px;
+	height: 100%;
+}
