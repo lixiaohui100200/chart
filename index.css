@@ -6,7 +6,6 @@ body{
 }
 .body{
 	display: flex;
-
 }
 .body .left{
 	width: 250px;
@@ -14,7 +13,9 @@ body{
 	position:absolute;
 	height: 100%;
 	background-color: #2f3137;
+	overflow-x:hidden;
 	color: white;
+
 }
 .body .right {
 	position:relative;
@@ -26,7 +27,7 @@ body{
 /*导航*/
 .body .right .rightTop{
 	background: #37393f;
-	border: 1px solid black;
+	border-bottom: 1px solid black;
 	color: white;
 	height: 50px;
 
@@ -45,14 +46,42 @@ body{
 	overflow: scroll;
 	background-color: #2f3137;
 	color: white;
+	overflow-x: hidden;
 }
 /*显示内容区*/
 .body .right .rightDown .content .content{
 	overflow: scroll;
 	height: 500px;
 	color: white;
+	overflow-x: hidden;
 }
 .body .right .rightDown .content .form {
 	border: 1px solid red;
 	height: 100px;
+}
+#left::-webkit-scrollbar {
+	width: 6px;
+	background-color: #F5F5F5;
+}
+#left::-webkit-scrollbar-thumb {
+	background-color: #1e2124;
+}
+#content::-webkit-scrollbar {
+	width: 6px;
+	background-color: #F5F5F5;
+}
+#content::-webkit-scrollbar-thumb {
+	background-color: #1e2124;
+}
+.user::-webkit-scrollbar {
+	width: 6px;
+	background-color: #F5F5F5;
+}
+.user::-webkit-scrollbar-thumb {
+	background-color: #1e2124;
+}
+#left::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.9);
+	border-radius: 10px;
+	background-color: #2f3137;
 }
